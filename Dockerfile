@@ -2,7 +2,6 @@ FROM node:latest AS api-builder
 WORKDIR /app/api
 COPY ./package*.json ./
 COPY ./prisma .
-COPY .env .
 COPY . .
 
 RUN npm install
