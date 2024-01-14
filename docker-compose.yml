@@ -1,20 +1,7 @@
 version: "3.8"
 services:
-  notes-app-server: 
-    build: ./notes-app-server
-    container_name: notes-app-server
+  secure-note-api: 
+    build: ./
+    container_name: secure-note-api
     ports:
       - "5000:5000"
-    # volumes:
-    #   - ./notes-app-server:/usr/src/app
-    #   - /usr/src/app/node_modules
-  notes-app-ui:
-    build: ./notes-app-ui
-    container_name: notes-app-ui
-    ports:
-      - "3000:3000"
-    # volumes:
-    #   - ./notes-app-ui:/usr/src/app
-    #   - /usr/src/app/node_modules
-    stdin_open: true
-    tty: true
