@@ -11,7 +11,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Note {
+model note {
   id      Int    @id @default(autoincrement())
   title   String
   content String
